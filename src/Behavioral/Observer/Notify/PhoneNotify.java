@@ -14,7 +14,8 @@ public class PhoneNotify extends Observer {
     public void notify(Subject subject) {
         if(subject instanceof VideoData){
             VideoData videoData = (VideoData) subject;
-            System.out.println(videoData.getTitle() + videoData.getDesc() + videoData.getFileName());
+            System.out.println("Notify via phone \n" +
+                    videoData.getTitle() +"\n"+ videoData.getDesc() +"\n"+ videoData.getFileName());
         }
     }
 }

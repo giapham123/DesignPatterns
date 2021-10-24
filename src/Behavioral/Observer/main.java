@@ -13,6 +13,7 @@ public class main {
 
         videoData.setTitle("Observer design pattern");
         videoData.detachObserver(phoneNotify);
+        System.out.println("-------------------------------");
         videoData.setDesc("gias");
 
     }

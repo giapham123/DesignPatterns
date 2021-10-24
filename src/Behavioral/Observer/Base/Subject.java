@@ -9,7 +9,7 @@ public class Subject {
         observers.add(observer);
     }
     public  void detachObserver(Observer observer){
-        observers.add(observer);
+        observers.remove(observer);
     }
     public  void NotifyObserver(Subject subject){
        for(Observer observer:observers){

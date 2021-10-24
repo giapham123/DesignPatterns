@@ -15,7 +15,8 @@ public class YotubeNotify extends Observer {
     public void notify(Subject subject) {
         if(subject instanceof VideoData){
             VideoData videoData = (VideoData) subject;
-            System.out.println(videoData.getTitle() + videoData.getDesc() + videoData.getFileName());
+            System.out.println("Notify via youtube \n" +
+                    videoData.getTitle() +"\n"+ videoData.getDesc() +"\n"+ videoData.getFileName());
         }
     }
 }
